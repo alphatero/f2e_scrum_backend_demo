@@ -1,10 +1,7 @@
 import express, { Express } from 'express';
-// import { db } from './firebase';
 import routes from './routes';
 
-// console.log(db);
-
-const port = 3020;
+const port = Number(process.env.PORT) || 3000;
 
 const app: Express = express();
 
