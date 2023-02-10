@@ -8,7 +8,8 @@
     "dev": "npm run lint & nodemon --watch 'src/**/*.ts' --exec ts-node src/app.ts",
     "build": "tsc",
     "lint": "eslint .",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "swagger-autogen": "node ./swagger.js"
   },
   "author": "Alpha",
   "license": "ISC",
@@ -32,6 +33,8 @@
     "express": "^4.18.2",
     "firebase": "^9.16.0",
     "firebase-admin": "^11.5.0",
-    "prisma": "^2.25.0"
+    "prisma": "^2.25.0",
+    "swagger-autogen": "^2.23.1",
+    "swagger-ui-express": "^4.6.0"
   }
 }
